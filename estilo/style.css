@@ -1,14 +1,15 @@
-    @charset "UTF-8";
+@charset "UTF-8";
 
-    @font-face {
-        font-family: 'Android';
-        src: url(/fontes/idroid.otf) format('opentype');
-    }
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+}
 
-    @font-face {
-        font-family: 'Be Pro';
-        src: url(/fontes/BeVietnamPro-Light.ttf) format('opentype');
-    }
+@font-face {
+    font-family: 'Be Pro';
+    src: url('../fontes/BeVietnamPro-Light.ttf') format('truetype');
+}
+
     * {
         margin: 0px;
         padding: 0px;
