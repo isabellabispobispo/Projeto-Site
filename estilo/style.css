@@ -74,6 +74,7 @@
         text-decoration: none;
         font-weight: bold;
         transition-duration: 0.4s;
+        min-width: 1px;
     }
 
     nav a:hover {
