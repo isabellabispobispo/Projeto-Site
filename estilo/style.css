@@ -1,0 +1,194 @@
+    @charset "UTF-8";
+
+    @font-face {
+        font-family: 'Android';
+        src: url(/fontes/idroid.otf) format('opentype');
+    }
+
+    @font-face {
+        font-family: 'Be Pro';
+        src: url(/fontes/BeVietnamPro-Light.ttf) format('opentype');
+    }
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    :root { 
+        /* variaveis */
+        --cor1: #ccdfec;
+        --cor2: #0991E6;
+        --cor3: #2B7EB3;
+        --cor4: #21488F;
+        --cor5: #386480;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Be Pro', Arial;
+    --fonte-android: 'Android', Arial;
+    }
+
+    body {
+        background-color: var(--cor1);
+        font-family: var(--fonte-destaque);
+        font-weight: 500;
+    }
+
+    /* a.externo::after{
+        content: '\00A0\1F517';
+        basicamente fala, se o link que contem a class externo, coloque depois o emoji ::after (que esta no codigo), nao coloquei pq achei feio
+    } */
+
+    header {
+    
+        background-image: linear-gradient(to bottom,  #bce4fd80, white);  /* deixei bem pouco pq nao gosto de gradient xD */
+        background-color: white;
+        min-height: 110px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    header > h1 {
+        color: var(--cor2);
+        font-family: var(--fonte-android);
+        margin-bottom: 5px;
+        font-size: 45px;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.171);
+    }
+
+    header p {
+        color: var(--cor2);
+        font-weight: bolder;
+        font-size: 18px;
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.171);
+
+    }
+
+    nav {
+        background-color:  var(--cor2);
+        padding: 10px;
+        
+    }
+
+    nav a {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        transition-duration: 0.4s;
+    }
+
+    nav a:hover {
+        border-radius: 5px;
+        background-color: #003e64de
+
+    }
+
+    main {
+        /* o margin faz o main "desgrudar" */
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        padding: 20px;
+        min-width: 300px;
+        max-width: 1000px; /*para de crescer quando chegar em 1000px. */
+        background-color: #ffffff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.356);
+        border-radius: 10px;
+    }
+
+    main h1 {
+        color: var(--cor3);
+        font-family: var(--fonte-android); 
+    }
+
+    main img {
+        /* img é um elemento inline, por isso o uso de display: block */
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    main img.bugdroidpq {
+        max-width: 350px;
+    
+    }
+
+    main p {
+        margin: 15px 0px; /* desgrudou tudo */
+        text-align: justify;
+        text-indent: 30px;
+        /* line-height: 1em; espaço entre as linhas, mas nao coloquei pq nao gostei xD*/
+        
+    }
+
+    main strong {
+        color: var(--cor2);
+    
+    }
+
+    main a {
+        color: var(--cor2);
+        background-color: var(--cor1);
+    }
+
+    /* main a:hover {
+        text-decoration: none;
+        color: black
+    } */
+
+    div.video {
+        background-color: #066baf27;
+        margin: 40px -20px;
+        padding: 15px;
+        padding-bottom: 59%;
+        position: relative;
+        
+    }
+
+    div.video > iframe {
+        position: absolute;
+        top: 5%; 
+        left: 5%;
+        width: 90%;
+        height: 90%;
+        border-radius: 5px;
+
+    }
+
+    aside {
+        background-color: var(--cor1);
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.356);
+    }
+
+    aside > ul {
+        list-style-type: '♡\00A0\00A0'; /* muda a decoração da bolinha, e os numerinhis 00a0 dao espaço, lembrando que nao é compativel com todo tipo de navegador! */
+        list-style-position: inside; /*coloca a bolinha pra dentro do bloco */
+        columns: 2; /*divide em duas colunas a lista */
+    }
+
+    h2 {
+        color: var(--cor3);
+        font-family: var(--fonte-android);
+    }
+
+    h3 {
+        background-image: linear-gradient(to right,  #9acbec, transparent);
+        font-family: var(--fonte-android);
+        font-weight: normal;
+        padding: 5px;
+        margin: -10px -10px 0px -10px;
+        border-radius: 10px 10px 0px 0px;
+        
+    }
+
+    footer {
+        background-color: var(--cor2);
+        color: white;
+        text-align: center;
+        padding: 5px
+
+    } 
+
+    footer a {
+    color: white; 
+    }
